@@ -1,0 +1,12 @@
+---
+applications:
+  - name: SRE-Demo-V3
+    path: build/libs/demo-cf-0.0.1-SNAPSHOT.jar
+    instances: 2
+    buildpacks:
+     - https://github.com/cloudfoundry/java-buildpack/releases/download/v4.42/java-buildpack-v4.42.zip
+    services:
+     - elastic-apm-renewing-firefly
+
+
+
